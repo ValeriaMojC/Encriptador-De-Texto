@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colores:
+    #413e4a
+    #73626e
+    #b38184
+    #f0b49e
+    #f7e4be
+*/
+body {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to right, #b38184, #f0b49e);
+    color: #413e4a;
+}
+
+header{
+    height: 20vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.autor a{
+    text-decoration: none;
+    color: #73626e;
+}
+
+.autor a:hover{
+    color: #f7e4be;
+}
+
+#contenedor-principal{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.texto-ingresar{
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    margin: 20px;
+}
+
+.texto-procesado{
+    display: flex;
+    flex-direction: column;
+}

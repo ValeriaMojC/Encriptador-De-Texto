@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="icon" href="/img/icono.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+    <header>
+        <h1 class="titulo-principal">Encriptador de texto</h1>
+        <h4 class="autor"><a href="https://www.linkedin.com/in/valeria-mojica-casta%C3%B1eda-/" target="_blank">Valeria Mojica Castañeda</a></h4>
+    </header>
+
+    <main id="contenedor-principal">
+        <section id="texto-sin-encriptar">
+            <div class="texto-ingresar">
+                <p>
+                    No acepta numeros ni caracteres especiales <br>
+                    Solo letras minúscula
+                </p>
+                <label for="texto">Ingresa el texto aquí</label>
+                <textarea class="texto" name="texto" cols="40" rows="6" placeholder="Ingrese texto aqui"></textarea>
+            </div>
+        
+            <div class="botones">
+                <button class="boton" value="Encriptar" onclick="botonEncriptar()">Encriptar</button>
+                <button class="boton" value="Desencriptar" onclick="botonDesencriptar()">Desencriptar</button>              
+            </div>
+        </section>
+
+        <section class="texto-encriptado">
+            <div class="texto-procesado">
+                <p class="input-texto">Mensaje Encriptado</p>
+                <textarea class="mensaje"cols="10" rows="15"></textarea>
+            </div>
+            <div class="botones">
+                <button class="boton" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>
